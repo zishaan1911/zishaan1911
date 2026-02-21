@@ -20,7 +20,7 @@ Execution & performance analytics
 
 Technical Stack:
 Languages: Python, C++
-Libraries: NumPy, Pandas, Scikit-learn, Jupyter, Matplotlib, Plotly, Scipy
+Libraries: NumPy, Pandas, Scikit-learn, Jupyter, Matplotlib, Plotly, Scipy, Cupy, Seaborn
 
 Specializations:
 Supervised & Unsupervised Learning
