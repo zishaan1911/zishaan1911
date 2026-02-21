@@ -1,16 +1,35 @@
-## Hi there 👋
+Hi, I'm Zishaan Ahmed
+Quantitatively driven Computer Science undergraduate passionate about building institutional-grade trading systems, financial models, and machine learning frameworks for capital markets.
 
-<!--
-**zishaan1911/zishaan1911** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I specialize in designing:
+Portfolio risk analytics engines
+Machine learning–based trading models
+Corporate valuation & forecasting systems
+Backtesting and execution infrastructures
 
-Here are some ideas to get you started:
+My work combines financial theory, statistics, and production-oriented system design, focusing on disciplined risk management, robust model evaluation, and data-driven decision-making.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Currently pursuing a Bachelor of Computer Science at Universiti Tunku Abdul Rahman (UTAR), where I focus on quantitative systems, machine learning, and algorithmic strategy development.
+
+Areas of Focus:
+Systematic & quantitative trading
+Financial machine learning
+Risk management & portfolio construction
+Market microstructure modeling
+Execution & performance analytics
+
+Technical Stack:
+Languages: Python, C++
+Libraries: NumPy, Pandas, Scikit-learn, Jupyter, Matplotlib, Plotly, Scipy
+
+Specializations:
+Supervised & Unsupervised Learning
+Statistical Modeling
+Backtesting System Architecture
+Stress Testing Models & Overfitting Control
+
+Mission:
+To engineer cool stuff FOR THE LOVE OF THE GAME!
+
+Let’s connect:
+Email: iamzishaan@gmail.com
