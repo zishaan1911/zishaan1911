@@ -1,5 +1,4 @@
-Hi, I'm Zishaan Ahmed,
-Computer Science undergraduate passionate about building institutional-grade trading systems, financial models, and machine learning frameworks for capital markets.
+Computer Science undergraduate passionate about building trading systems, financial models, and machine learning frameworks for capital markets.
 
 I specialize in designing:
 Portfolio risk analytics engines,
