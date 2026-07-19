@@ -1,19 +1,5 @@
-Computer Science undergraduate passionate about building trading systems, financial models, and machine learning frameworks for capital markets.
-
-My work combines financial theory, statistics, and production-oriented system design, focusing on disciplined risk management, robust model evaluation, and data-driven decision-making.
-
-Currently pursuing a Bachelor of Computer Science at Universiti Tunku Abdul Rahman (UTAR), where I focus on quantitative systems, machine learning, and algorithmic strategy development.
-
-Areas of Focus:
-Systematic & quantitative trading,
-Financial machine learning,
-Risk management & portfolio construction,
-Market microstructure modeling,
-Execution & performance analytics
-
 Technical Stack:
-Languages: Python, C++
-Libraries: NumPy, Pandas, Scikit-learn, Jupyter, Matplotlib, Plotly, Scipy, Cupy, Seaborn
+Languages: Python, C++, JavaScript, Rust, Go
 
 Mission:
 To engineer cool stuff FOR THE LOVE OF THE GAME!
