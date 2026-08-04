@@ -18,10 +18,6 @@
 
 </div>
 
-<div align="center">
-<img src="https://ghchart.rshah.org/58A6FF/zishaan1911" alt="Contribution graph" width="100%" />
-</div>
-
 <br/>
 
 ## Tech Stack
