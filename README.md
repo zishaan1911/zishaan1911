@@ -3,17 +3,11 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-zishaan--ahmed-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/zishaan-ahmed)
 
 </div>
-
-## GitHub Stats
-
 <div align="center">
 
 <img src="https://streak-stats.demolab.com/?user=zishaan1911&theme=dark&hide_border=true" alt="GitHub streak" height="200" />
 
 </div>
-
-## Tech Stack
-
 <div align="center">
 <img src="https://skillicons.dev/icons?i=rust,c,cpp,py,go,cs,js,html,bash,dotnet,css,react,tensorflow,sklearn,opencv,mysql,sqlite,docker,terraform,kubernetes,aws,azure,googlecloud,obsidian,git,github,linux,pycharm,anaconda,postman&theme=dark" alt="Tech stack" />
 </div>
