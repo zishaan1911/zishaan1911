@@ -16,8 +16,10 @@
 
 <br/>
 <br/>
-</div>
+<div align="left">
+  
 ## Technologies I have used:
+
 <div align="center">
 <img src="https://skillicons.dev/icons?i=rust,c,cpp,py,go,cs,js,html,bash,dotnet,css,react,tensorflow,sklearn,opencv,mysql,sqlite,docker,terraform,kubernetes,aws,azure,googlecloud,obsidian,git,github,linux,pycharm,anaconda,postman&theme=dark" alt="Tech stack" />
 </div>
