@@ -12,13 +12,13 @@
 
 <div align="center">
 
-<img src="https://github-stats-extended.vercel.app/api?username=zishaan1911&show_icons=true&theme=dark&hide_border=true" width="100%" />
+<img src="https://github-stats-extended.vercel.app/api?username=zishaan1911&show_icons=true&theme=dark&hide_border=true" width="50%" />
 
 <br>
 
-<img src="https://streak-stats.demolab.com/?user=zishaan1911&theme=dark&hide_border=true" width="100%" />
+<img src="https://streak-stats.demolab.com/?user=zishaan1911&theme=dark&hide_border=true" width="50%" />
 
-<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=zishaan1911&layout=compact&theme=dark&hide_border=true" width="100%" />
+<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=zishaan1911&layout=compact&theme=dark&hide_border=true" width="50%" />
 </div>
 <br/>
 <br/>
