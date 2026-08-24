@@ -1,6 +1,4 @@
-<div align="center">
-
-[![GitHub](https://img.shields.io/badge/GitHub-zishaan1911-181717?style=flat-square&logo=github)](https://github.com/zishaan1911)
+[![committers.top badge](https://user-badge.committers.top/malaysia/zishaan1911.svg)](https://user-badge.committers.top/malaysia/khoryz666)
 [![LeetCode](https://img.shields.io/badge/LeetCode-iamzishaan-FFA116?style=flat-square&logo=leetcode&logoColor=black)](https://leetcode.com/u/iamzishaan)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-zishaan--ahmed-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/zishaan-ahmed)
 <img src="https://komarev.com/ghpvc/?username=zishaan1911&style=flat-square&color=58A6FF&label=Profile+Views" alt="Profile views" />
@@ -18,9 +16,15 @@
 
 <img src="https://streak-stats.demolab.com/?user=zishaan1911&theme=dark&hide_border=true" width="50%" />
 
-<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=zishaan1911&layout=compact&theme=dark&hide_border=true" width="50%" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=zishaan1911&theme=github_dark" width="50%" />
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=zishaan1911&theme=github_dark" width="50%" />
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=zishaan1911&theme=github_dark" width="50%" />
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=zishaan1911&theme=github_dark&utcOffset=4" width="50%" />
+
 </div>
-<br/>
 <br/>
 <div align="left">
   
