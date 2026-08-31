@@ -1,9 +1,6 @@
 <div align="center">
 
-[![GitHub Commits Badge](https://ghcommits.com/api/badge/zishaan1911.svg)](https://ghcommits.com)
-
-</br>
-
+[![committers.top badge](https://user-badge.committers.top/malaysia/USERNAME.svg)](https://user-badge.committers.top/malaysia/USERNAME)
 [![LeetCode](https://img.shields.io/badge/LeetCode-iamzishaan-FFA116?style=flat-square&logo=leetcode&logoColor=black)](https://leetcode.com/u/iamzishaan)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-zishaan--ahmed-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/zishaan-ahmed)
 <img src="https://komarev.com/ghpvc/?username=zishaan1911&style=flat-square&color=58A6FF&label=Profile+Views" alt="Profile views" />
