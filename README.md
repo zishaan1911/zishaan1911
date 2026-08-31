@@ -27,7 +27,7 @@
 
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=zishaan1911&theme=github_dark" width="50%" />
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=zishaan1911&theme=github_dark&utcOffset=4" width="50%" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=zishaan1911&theme=github_dark&utcOffset=8" width="50%" />
 
 </div>
 <br/>
