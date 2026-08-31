@@ -17,15 +17,17 @@
 
 <img src="https://github-stats-extended.vercel.app/api?username=zishaan1911&show_icons=true&theme=dark&hide_border=true" width="50%" />
 
-<img src="https://streak-stats.demolab.com/?user=zishaan1911&theme=dark&hide_border=true" width="48%" />
+<br>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=zishaan1911&theme=github_dark" width="48%" />
+<img src="https://streak-stats.demolab.com/?user=zishaan1911&theme=dark&hide_border=true" width="50%" />
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=zishaan1911&theme=github_dark" width="48%" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=zishaan1911&theme=github_dark" width="50%" />
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=zishaan1911&theme=github_dark" width="48%" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=zishaan1911&theme=github_dark" width="50%" />
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=zishaan1911&theme=github_dark&utcOffset=8" width="48%" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=zishaan1911&theme=github_dark" width="50%" />
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=zishaan1911&theme=github_dark&utcOffset=8" width="50%" />
 
 </div>
 <br/>
