@@ -15,19 +15,19 @@
 ## GitHub Stats
 
 <div align="center">
-  <a href="https://awesome-github-stats.azurewebsites.net/index.html??cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=100">    <img  alt="zishaan1911's GitHub Stats" src="https://awesome-github-stats.azurewebsites.net/user-stats/zishaan1911?cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=100" width="500"/>  </a>
+  <a href="https://awesome-github-stats.azurewebsites.net/index.html??cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=100">    <img  alt="zishaan1911's GitHub Stats" src="https://awesome-github-stats.azurewebsites.net/user-stats/zishaan1911?cardType=level-alternate&theme=light&fontFamily=&preferLogin=false&Points.Commits=100" width="500"/>  </a>
 
 <br>
 
-<img src="https://streak-stats.demolab.com/?user=zishaan1911&theme=dark&hide_border=true" width="500"/>
+![GitHub Stats](https://streak-stats.demolab.com?user=zishaan1911&theme=default&hide_border=true)
 
 <br>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=zishaan1911&theme=github_dark" width="166" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=zishaan1911&theme=github_light" width="166" />
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=zishaan1911&theme=github_dark" width="166" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=zishaan1911&theme=github_light" width="166" />
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=zishaan1911&theme=github_dark&utcOffset=8" width="166" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=zishaan1911&theme=github_light&utcOffset=8" width="166" />
 
 </div>
 <br/>
