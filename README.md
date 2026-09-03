@@ -6,6 +6,7 @@
 
 [![LeetCode](https://img.shields.io/badge/LeetCode-iamzishaan-FFA116?style=flat-square&logo=leetcode&logoColor=black)](https://leetcode.com/u/iamzishaan)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-zishaan--ahmed-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/zishaan-ahmed)
+![GitHub Mini Badge](https://ghstats.dev/api/mini?username=zishaan1911&metric=hours&label=Hours+Coded)
 <img src="https://komarev.com/ghpvc/?username=zishaan1911&style=flat-square&color=58A6FF&label=Profile+Views" alt="Profile views" />
 
 </div>
