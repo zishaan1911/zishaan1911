@@ -35,7 +35,9 @@
 ## Technologies I have used:
 
 <div align="center">
-<img src="https://skillicons.dev/icons?i=c,cpp,py,go,rust,cs,java,js,ts,html,bash,cmake,dotnet,css,react,tensorflow,sklearn,opencv,postgres,mysql,sqlite,docker,terraform,kubernetes,aws,azure,googlecloud,git,github,arch,ubuntu,vscode,clion,pycharm,anaconda,postman&theme=dark&perline=9" alt="Tech stack" />
+  
+[![Skills Stack Icoziv](https://i.icoziv.workers.dev/icons?i=c,cpp,py,go,rust,cs,java,js,ts,html,swift,kotlin,android,ios,bash,cmake,dotnet,css,react,tensorflow,sklearn,opencv,postgresql,mysql,sqlite,docker,terraform,kubernetes,aws,azure,googlecloud,git,github,arch,ubuntu,vscode,clion,pycharm,anaconda,postman&theme=dark&perline=10)](https://github.com/thuongtruong109/icoziv)
+
 </div>
 
 <div align="center">
