@@ -36,7 +36,7 @@
 
 <div align="center">
   
-[![Skills Stack Icoziv](https://i.icoziv.workers.dev/icons?i=c,cpp,py,go,rust,cs,java,js,ts,html,swift,kotlin,android,ios,bash,cmake,dotnet,css,react,tensorflow,sklearn,opencv,postgresql,mysql,sqlite,docker,terraform,kubernetes,aws,azure,googlecloud,git,github,arch,ubuntu,vscode,clion,pycharm,anaconda,postman&theme=dark&perline=10)](https://github.com/thuongtruong109/icoziv)
+[![Skills Stack Icoziv](https://i.icoziv.workers.dev/icons?i=c,cpp,py,go,rust,cs,java,js,ts,latex,html,swift,kotlin,android,ios,bash,cmake,dotnet,css,react,tensorflow,sklearn,opencv,postgresql,mysql,docker,terraform,kubernetes,aws,azure,googlecloud,git,github,arch,ubuntu,vscode,clion,pycharm,anaconda,postman&theme=dark&perline=10)](https://github.com/thuongtruong109/icoziv)
 
 </div>
 
