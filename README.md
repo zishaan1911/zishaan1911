@@ -31,7 +31,7 @@
 </div>
 <br/>
 
-## My Open-Access Research papers in Math and Theoretical Computer Science:
+## Open-Access Research papers in Math and Theoretical Computer Science:
 <div align="center">
 <br>
 
@@ -42,7 +42,7 @@
 
 <div align="left">
   
-## Technologies I have used:
+## Tech Stack:
 
 <div align="center">
   
