@@ -10,7 +10,7 @@
 </div>
 
 
-## GitHub Stats
+## GitHub Stats:
 
 <div align="center">
   <a href="https://awesome-github-stats.azurewebsites.net/index.html??cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=100">    <img  alt="zishaan1911's GitHub Stats" src="https://awesome-github-stats.azurewebsites.net/user-stats/zishaan1911?cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=100" width="500"/>  </a>
@@ -30,6 +30,16 @@
 
 </div>
 <br/>
+
+## My Open-Access Research papers in Math and Theoretical Computer Science:
+<div align="center">
+<br>
+
+<a href="https://doi.org/10.5281/zenodo.22970394"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.22970394.svg" alt="DOI"></a>
+<a href="https://doi.org/10.5281/zenodo.22763759"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.22763759.svg" alt="DOI"></a>
+
+</div>
+
 <div align="left">
   
 ## Technologies I have used:
