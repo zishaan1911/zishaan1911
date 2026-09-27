@@ -13,7 +13,7 @@
 ## GitHub Stats:
 
 <div align="center">
-  <a href="https://awesome-github-stats.azurewebsites.net/index.html??cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=100">    <img  alt="zishaan1911's GitHub Stats" src="https://awesome-github-stats.azurewebsites.net/user-stats/zishaan1911?cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=100" width="500"/>  </a>
+  <a href="https://awesome-github-stats.azurewebsites.net/index.html??cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=100">    <img  alt="zishaan1911's GitHub Stats" src="https://awesome-github-stats.azurewebsites.net/user-stats/zishaan1911?cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=500" width="500"/>  </a>
 
 <br>
 
