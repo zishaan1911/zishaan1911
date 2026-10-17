@@ -17,7 +17,7 @@
 
 <br>
 
-<img src="https://streak-stats.demolab.com/?user=zishaan1911&theme=dark&hide_border=true" width="500"/>
+<a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=zishaan1911&theme=dark" width="500" alt="GitHub Streak" /></a>
 
 <br>
 
