@@ -1,7 +1,7 @@
 <div align="center">
 <br>
 
-[![committers.top badge](https://user-badge.committers.top/malaysia/zishaan1911.svg)](https://user-badge.committers.top/malaysia/zishaan1911)
+[![committers.top badge](https://user-badge.committers.top/malaysia/USERNAME.svg)](https://user-badge.committers.top/malaysia/zishaan1911)
 <br>
 [![LeetCode](https://img.shields.io/badge/LeetCode-iamzishaan-FFA116?style=flat-square&logo=leetcode&logoColor=black)](https://leetcode.com/u/iamzishaan)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-zishaan--ahmed-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/zishaan-ahmed)
