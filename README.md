@@ -1,7 +1,7 @@
 <div align="center">
 <br>
 
-[![committers.top badge](https://user-badge.committers.top/malaysia/USERNAME.svg)](https://user-badge.committers.top/malaysia/zishaan1911)
+[![committers.top badge](https://user-badge.committers.top/malaysia/zishaan1911.svg)](https://user-badge.committers.top/malaysia/zishaan1911)
 <br>
 [![LeetCode](https://img.shields.io/badge/LeetCode-iamzishaan-FFA116?style=flat-square&logo=leetcode&logoColor=black)](https://leetcode.com/u/iamzishaan)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-zishaan--ahmed-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/zishaan-ahmed)
@@ -13,7 +13,7 @@
 ## GitHub Stats:
 
 <div align="center">
-  <a href="https://awesome-github-stats.azurewebsites.net/index.html??cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=100">    <img  alt="zishaan1911's GitHub Stats" src="https://awesome-github-stats.azurewebsites.net/user-stats/zishaan1911?cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=300" width="500"/>  </a>
+  <a href="https://awesome-github-stats.azurewebsites.net/index.html??cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=100">    <img  alt="zishaan1911's GitHub Stats" src="https://awesome-github-stats.azurewebsites.net/user-stats/zishaan1911?cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=100" width="500"/>  </a>
 
 <br>
 
