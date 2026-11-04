@@ -42,6 +42,12 @@
 </div>
 
 <div align="left">
+
+## LeetCode:
+
+<p align="center">
+  <img src="https://leetcard.jacoblin.cool/iamzishaan?theme=dark" alt="LeetCode Stats" width="500"/>
+</p>
   
 ## Tech Stack:
 
