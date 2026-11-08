@@ -2,6 +2,7 @@
 <br>
 
 [![committers.top badge](https://user-badge.committers.top/malaysia/zishaan1911.svg)](https://user-badge.committers.top/malaysia/zishaan1911)
+[![Chess.com Rapid Best](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.chess.com%2Fpub%2Fplayer%2Fzishaan0411%2Fstats&query=%24.chess_rapid.best.rating&label=Rapid%20Peak&logo=chess.com&logoColor=white&color=769656)](https://www.chess.com/member/zishaan0411)
 <br>
 [![LeetCode](https://img.shields.io/badge/LeetCode-iamzishaan-FFA116?style=flat-square&logo=leetcode&logoColor=black)](https://leetcode.com/u/iamzishaan)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-zishaan--ahmed-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/zishaan-ahmed)
