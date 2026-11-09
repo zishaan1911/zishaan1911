@@ -1,63 +1,58 @@
-<div align="center">
-<br>
 
-[![committers.top badge](https://user-badge.committers.top/malaysia/zishaan1911.svg)](https://user-badge.committers.top/malaysia/zishaan1911)
-[![Chess.com Rapid Best](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.chess.com%2Fpub%2Fplayer%2Fzishaan0411%2Fstats&query=%24.chess_rapid.best.rating&label=Rapid%20Peak&logo=chess.com&logoColor=white&color=769656)](https://www.chess.com/member/zishaan0411)
-<br>
-[![LeetCode](https://img.shields.io/badge/LeetCode-iamzishaan-FFA116?style=flat-square&logo=leetcode&logoColor=black)](https://leetcode.com/u/iamzishaan)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-zishaan--ahmed-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/zishaan-ahmed)
-<img src="https://komarev.com/ghpvc/?username=zishaan1911&style=flat-square&color=58A6FF&label=Profile+Views" alt="Profile views" />
+## GitHub Statistics
+
+<div align="center">
+
+  <a href="https://awesome-github-stats.azurewebsites.net/index.html??cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=100">
+    <img
+      src="https://awesome-github-stats.azurewebsites.net/user-stats/zishaan1911?cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=100"
+      width="700"
+      alt="GitHub Statistics"
+    />
+  </a>
+
+  <br/><br/>
+
+  <img
+    src="https://gitblend.com/api/contributions/github?username=zishaan1911&theme=dark"
+    width="700"
+    alt="GitHub Contributions"
+  />
+
+  <br/><br/>
+
+  <img
+    src="https://github-readme-streak-stats.herokuapp.com?user=zishaan1911&theme=dark"
+    width="700"
+    alt="GitHub Streak"
+  />
 
 </div>
 
-
-## GitHub Stats:
-
-<div align="center">
-  <a href="https://awesome-github-stats.azurewebsites.net/index.html??cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=100">    <img  alt="zishaan1911's GitHub Stats" src="https://awesome-github-stats.azurewebsites.net/user-stats/zishaan1911?cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=100" width="500"/>  </a>
-
-<br>
-
-<a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=zishaan1911&theme=dark" width="500" alt="GitHub Streak" /></a>
-
-<br>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=zishaan1911&theme=github_dark" width="166" />
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=zishaan1911&theme=github_dark" width="166" />
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=zishaan1911&theme=github_dark&utcOffset=8" width="166" />
-
-
-</div>
-<br/>
-
-## Open-Access Research papers in Math and Theoretical Computer Science:
-<div align="center">
-<br>
-
-<a href="https://doi.org/10.5281/zenodo.23045013"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.23045013.svg" alt="DOI"></a>
-<a href="https://doi.org/10.5281/zenodo.22970394"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.22970394.svg" alt="DOI"></a>
-<a href="https://doi.org/10.5281/zenodo.22763759"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.22763759.svg" alt="DOI"></a>
-
-</div>
-
-<div align="left">
-
-## LeetCode:
-
-<p align="center">
-  <img src="https://leetcard.jacoblin.cool/iamzishaan?theme=dark" alt="LeetCode Stats" width="500"/>
-</p>
-  
-## Tech Stack:
+## Programming Languages
 
 <div align="center">
-  
-[![Skills Stack Icoziv](https://i.icoziv.workers.dev/icons?i=c,cpp,py,go,rust,cs,java,js,ts,latex,html,swift,kotlin,php,android,ios,bash,cmake,dotnet,css,react,tensorflow,sklearn,laravel,opencv,postgresql,mysql,supabase,docker,terraform,kubernetes,aws,azure,googlecloud,vercel,git,github,arch,ubuntu,vscode,clion,pycharm,anaconda,postman&theme=dark&perline=11)](https://github.com/thuongtruong109/icoziv)
 
-</div>
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=zishaan1911&theme=github_dark"
+    width="700"
+    alt="Languages by Repository"
+  />
 
-<div align="center">
-<sub>Built by <a href="https://github.com/zishaan1911">zishaan1911</a></sub>
+  <br/>
+
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=zishaan1911&theme=github_dark"
+    width="700"
+    alt="Most Used Languages"
+  />
+
+  <br/>
+
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=zishaan1911&theme=github_dark&utcOffset=8"
+    width="700"
+    alt="Productive Time"
+  />
+
 </div>
