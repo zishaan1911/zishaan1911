@@ -90,6 +90,32 @@
 
 ---
 
+## GitHub Statistics
+
+<div align="center">
+
+  <a href="https://awesome-github-stats.azurewebsites.net/index.html??cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=100">
+    <img
+      src="https://awesome-github-stats.azurewebsites.net/user-stats/zishaan1911?cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=100"
+      width="320"
+      alt="GitHub Statistics"
+    />
+  </a>
+  <img
+    src="https://github-readme-streak-stats.herokuapp.com?user=zishaan1911&theme=dark"
+    width="360"
+    alt="GitHub Streak"
+  />
+  <img
+    src="https://gitblend.com/api/contributions/github?username=zishaan1911&theme=dark"
+    width="680"
+    alt="GitHub Contributions"
+  />
+
+</div>
+
+---
+
 ## Open-Access Research
 
 *Mathematics & Theoretical Computer Science*
