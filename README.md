@@ -1,63 +1,121 @@
-<a href="https://zishaan1911.github.io/">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-    <img alt="Zishaan Ahmed: robots, simulators and silicon" src="assets/banner-light.svg" width="100%">
-  </picture>
-</a>
+<div align="center">
 
-I build robots, simulators, and the occasional GPU. I run **[Seventh Axis](https://seventh-axis.vercel.app)**, a robotics company in Kuala Lumpur: you tell a robot arm what to do in English, Bahasa Malaysia or Mandarin, and it plans, checks and runs the program. I like projects where the physics has to be right.
+  <a href="https://zishaan1911.github.io/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+      <img alt="Zishaan Ahmed: robots, simulators and silicon" src="assets/banner-light.svg" width="100%">
+    </picture>
+  </a>
 
-[![Portfolio](https://img.shields.io/badge/portfolio-zishaan1911.github.io-111?style=flat-square)](https://zishaan1911.github.io/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-zishaan--ahmed-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/zishaan-ahmed)
-[![LeetCode](https://img.shields.io/badge/LeetCode-iamzishaan-FFA116?style=flat-square&logo=leetcode&logoColor=black)](https://leetcode.com/u/iamzishaan)
-[![Committers](https://user-badge.committers.top/malaysia/zishaan1911.svg)](https://user-badge.committers.top/malaysia/zishaan1911)
+  <br/>
 
----
+  [![Committers](https://user-badge.committers.top/malaysia/zishaan1911.svg)](https://user-badge.committers.top/malaysia/zishaan1911)
+  [![Chess.com Rapid Peak](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.chess.com%2Fpub%2Fplayer%2Fzishaan0411%2Fstats&query=%24.chess_rapid.best.rating&label=Rapid%20Peak&logo=chess.com&logoColor=white&color=769656)](https://www.chess.com/member/zishaan0411)
 
-### 🦾 Robots and hardware
+  [![Portfolio](https://img.shields.io/badge/Portfolio-zishaan1911.github.io-181717?style=flat-square&logo=githubpages&logoColor=white)](https://zishaan1911.github.io/)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-zishaan--ahmed-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/zishaan-ahmed)
+  [![LeetCode](https://img.shields.io/badge/LeetCode-iamzishaan-FFA116?style=flat-square&logo=leetcode&logoColor=black)](https://leetcode.com/u/iamzishaan)
 
-| | |
-|---|---|
-| **[Seventh Axis](https://github.com/seventhaxisrobots/seventh-axis)** · [live](https://seventh-axis.vercel.app) | Program robot arms in plain language, in three languages. |
-| **[tiny-gpu](https://github.com/zishaan1911/tiny-gpu)** | A triangle-rasterising GPU in Verilog on an iCE40 FPGA, driving VGA at 640×480. Comes with a routed 4-layer KiCad board. |
-| **[OpenRover](https://github.com/zishaan1911/OpenRover)** | A rover autonomy stack built simulation-first: SLAM, planning, obstacle avoidance. Real hardware is optional. |
-| **[VECTOR](https://github.com/zishaan1911/Vector-missile-interceptor)** | A closed-loop autonomy sandbox: noisy sensors, Bayesian estimation, guidance and control. |
-
-### 🌌 Physics and simulation
-
-| | |
-|---|---|
-| **[Kerrscope](https://github.com/zishaan1911/Kerrscope)** · [live](https://zishaan1911.github.io/Kerrscope/) | A real-time ray tracer for spinning black holes. It integrates light paths through Kerr spacetime in OpenGL. |
-| **[spillway](https://github.com/zishaan1911/spillway)** | A C++20 puzzle game where you draw walls to steer a from-scratch SPH water simulation. |
-| **[afterburner](https://github.com/zishaan1911/afterburner)** | A 3D fighter jet flight sim in Panda3D. |
-
-### 🧠 AI and developer tools
-
-| | |
-|---|---|
-| **[SmolGPT](https://github.com/zishaan1911/SmolGPT)** · [live](https://zishaan1911.github.io/SmolGPT/) | A small GPT I trained from scratch on TinyStories. It runs in your browser. |
-| **[Helmsman](https://github.com/zishaan1911/Helmsman)** · [docs](https://zishaan1911.github.io/Helmsman/) | AI-assisted GitOps deployments, written in Go. |
-| **[claude-parallel-agents](https://github.com/zishaan1911/claude-parallel-agents)** | A Claude Code skill: the orchestrator plans and reviews while cheaper models write the code in visible windows. |
-
-### 📈 Markets and data
-
-| | |
-|---|---|
-| **[pitwall](https://github.com/zishaan1911/pitwall)** · [live](https://zishaan1911.github.io/pitwall/) | Race engineering for real F1 races: tyre degradation models, strategy scoring, undercut audits. |
-| **[Silica Index](https://github.com/zishaan1911/near-hackathon-2026)** · [live](https://silicaindex.vercel.app) | A live price index for GPU compute, with hourly futures that settle on NEAR. |
-| **[GASX](https://github.com/zishaan1911/GASX)** · [live](https://gasx-ecru.vercel.app) | 🏆 Finalist at the MUBA Blockchain Hackathon 2026. |
-| **[monte-carlo-engine](https://github.com/zishaan1911/monte-carlo-engine)** | Multi-asset Monte Carlo pricing and risk, accelerated with Numba. |
+</div>
 
 ---
 
-### 📄 Research
+## Projects
 
-- [**How long is the graph of xⁿ?**](https://github.com/zishaan1911/arc-length-of-xn): logarithmic corner defects in arc length, with the paper and a numerical check.
-- [**Hybrid SAT solver selection**](https://github.com/zishaan1911/hybrid-sat-selector): my final-year project at UTAR. It picks a SAT solver per instance by combining SATzilla features with GNN embeddings.
-- Open-access papers: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23045013.svg)](https://doi.org/10.5281/zenodo.23045013) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22970394.svg)](https://doi.org/10.5281/zenodo.22970394) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22763759.svg)](https://doi.org/10.5281/zenodo.22763759)
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <b><a href="https://github.com/seventhaxisrobots/seventh-axis">Seventh Axis</a></b><br/>
+      <sub>Program robot arms in plain language</sub><br/>
+      <sub><a href="https://seventh-axis.vercel.app">live ↗</a></sub>
+    </td>
+    <td width="33%" valign="top">
+      <b><a href="https://github.com/zishaan1911/tiny-gpu">tiny-gpu</a></b><br/>
+      <sub>Verilog GPU on an iCE40 FPGA, with its own PCB</sub>
+    </td>
+    <td width="33%" valign="top">
+      <b><a href="https://github.com/zishaan1911/OpenRover">OpenRover</a></b><br/>
+      <sub>Simulation-first autonomous rover stack</sub>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <b><a href="https://github.com/zishaan1911/Kerrscope">Kerrscope</a></b><br/>
+      <sub>Real-time black hole ray tracer</sub><br/>
+      <sub><a href="https://zishaan1911.github.io/Kerrscope/">live ↗</a></sub>
+    </td>
+    <td valign="top">
+      <b><a href="https://github.com/zishaan1911/spillway">spillway</a></b><br/>
+      <sub>Fluid puzzle game on a from-scratch SPH sim</sub>
+    </td>
+    <td valign="top">
+      <b><a href="https://github.com/zishaan1911/afterburner">afterburner</a></b><br/>
+      <sub>3D fighter jet flight sim</sub>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <b><a href="https://github.com/zishaan1911/SmolGPT">SmolGPT</a></b><br/>
+      <sub>A GPT trained from scratch, runs in your browser</sub><br/>
+      <sub><a href="https://zishaan1911.github.io/SmolGPT/">live ↗</a></sub>
+    </td>
+    <td valign="top">
+      <b><a href="https://github.com/zishaan1911/Helmsman">Helmsman</a></b><br/>
+      <sub>AI-assisted GitOps deployments</sub><br/>
+      <sub><a href="https://zishaan1911.github.io/Helmsman/">docs ↗</a></sub>
+    </td>
+    <td valign="top">
+      <b><a href="https://github.com/zishaan1911/claude-parallel-agents">claude-parallel-agents</a></b><br/>
+      <sub>Run cheaper Claude models in parallel</sub>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <b><a href="https://github.com/zishaan1911/pitwall">pitwall</a></b><br/>
+      <sub>F1 race strategy analysis</sub><br/>
+      <sub><a href="https://zishaan1911.github.io/pitwall/">live ↗</a></sub>
+    </td>
+    <td valign="top">
+      <b><a href="https://github.com/zishaan1911/near-hackathon-2026">Silica Index</a></b><br/>
+      <sub>GPU compute futures on NEAR</sub><br/>
+      <sub><a href="https://silicaindex.vercel.app">live ↗</a></sub>
+    </td>
+    <td valign="top">
+      <b><a href="https://github.com/zishaan1911/GASX">GASX</a></b><br/>
+      <sub>🏆 MUBA Blockchain Hackathon finalist</sub><br/>
+      <sub><a href="https://gasx-ecru.vercel.app">live ↗</a></sub>
+    </td>
+  </tr>
+</table>
 
-### 🧰 What I actually reach for
+---
 
-`C++` `Python` `TypeScript` `Go` `Rust` `Verilog` · `OpenGL` `raylib` `KiCad` · `React` `Next.js` `Laravel` · `Docker` `Vercel` `AWS`
+## Open-Access Research
 
-<sub>Off the keyboard: rapid chess, peak [![Rapid Peak](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.chess.com%2Fpub%2Fplayer%2Fzishaan0411%2Fstats&query=%24.chess_rapid.best.rating&label=&color=769656&style=flat-square)](https://www.chess.com/member/zishaan0411). Ask me about black holes or F1 strategy.</sub>
+*Mathematics & Theoretical Computer Science*
+
+<div align="center">
+
+  [![Paper 1](https://zenodo.org/badge/DOI/10.5281/zenodo.23045013.svg)](https://doi.org/10.5281/zenodo.23045013)
+  [![Paper 2](https://zenodo.org/badge/DOI/10.5281/zenodo.22970394.svg)](https://doi.org/10.5281/zenodo.22970394)
+  [![Paper 3](https://zenodo.org/badge/DOI/10.5281/zenodo.22763759.svg)](https://doi.org/10.5281/zenodo.22763759)
+
+</div>
+
+---
+
+## Tech Stack
+
+<div align="center">
+
+  [![Tech Stack](https://i.icoziv.workers.dev/icons?i=cpp,py,ts,go,rust,java,react,laravel,opencv,postgresql,docker,kubernetes,aws,vercel,git,arch&theme=dark&perline=8)](https://github.com/thuongtruong109/icoziv)
+
+</div>
+
+---
+
+<div align="center">
+
+  <sub>Built with curiosity by <a href="https://github.com/zishaan1911">zishaan1911</a></sub>
+
+</div>
