@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Zishaan Ahmed: robots, simulators and silicon">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffb347" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#ff6a00" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ff6a00" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="disk" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#ff7a18" stop-opacity="0.15"/>
+      <stop offset="30%" stop-color="#ffd27a"/>
+      <stop offset="55%" stop-color="#fff4d6"/>
+      <stop offset="80%" stop-color="#ff9a3c"/>
+      <stop offset="100%" stop-color="#ff7a18" stop-opacity="0.15"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#1d2433" stroke-width="1"/>
+    </pattern>
+    <style>
+      .spin { transform-origin: 930px 160px; animation: spin 40s linear infinite; }
+      .pulse { animation: pulse 6s ease-in-out infinite; transform-origin: 930px 160px; }
+      .blink { animation: blink 1.1s steps(1) infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes pulse { 50% { opacity: .65; transform: scale(1.04); } }
+      @keyframes blink { 50% { opacity: 0; } }
+      @media (prefers-reduced-motion: reduce) { .spin, .pulse, .blink { animation: none; } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="320" rx="16" fill="#0b0f17"/>
+  <rect width="1200" height="320" rx="16" fill="url(#grid)" opacity="0.6"/>
+
+  <!-- stars -->
+  <g fill="#c9d4ff" opacity="0.7">
+    <circle cx="640" cy="40" r="1.2"/><circle cx="720" cy="270" r="1"/><circle cx="1110" cy="60" r="1.4"/>
+    <circle cx="1150" cy="250" r="1"/><circle cx="780" cy="90" r="0.9"/><circle cx="1060" cy="290" r="1.1"/>
+    <circle cx="690" cy="180" r="0.8"/><circle cx="1170" cy="150" r="0.9"/><circle cx="820" cy="30" r="1"/>
+  </g>
+
+  <!-- black hole -->
+  <circle cx="930" cy="160" r="150" fill="url(#glow)" class="pulse"/>
+  <g class="spin">
+    <ellipse cx="930" cy="160" rx="140" ry="26" fill="none" stroke="url(#disk)" stroke-width="10" stroke-dasharray="60 14 120 10 30 18"/>
+  </g>
+  <!-- lensed upper arc of the disk -->
+  <path d="M858 160 A72 72 0 0 1 1002 160" fill="none" stroke="#ffd27a" stroke-width="5" opacity="0.85"/>
+  <circle cx="930" cy="160" r="54" fill="#000"/>
+  <circle cx="930" cy="160" r="57" fill="none" stroke="#fff4d6" stroke-width="1.5" opacity="0.8"/>
+  <!-- disk in front of the shadow -->
+  <path d="M790 160 A140 26 0 0 0 1070 160" fill="none" stroke="url(#disk)" stroke-width="8"/>
+
+  <!-- text -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="64" y="96" fill="#7d8aa6" font-size="18">~/zishaan1911 $ whoami</text>
+    <text x="64" y="160" fill="#f2f5fb" font-size="54" font-weight="700" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">Zishaan Ahmed</text>
+    <text x="64" y="204" fill="#ffb347" font-size="22">robots · simulators · silicon</text>
+    <text x="64" y="252" fill="#7d8aa6" font-size="16">founder @ Seventh Axis — Kuala Lumpur, MY</text>
+    <rect x="314" y="80" width="10" height="20" fill="#ffb347" class="blink"/>
+  </g>
+</svg>
