@@ -15,16 +15,12 @@
 
 <div align="center">
 
-  <a href="https://awesome-github-stats.azurewebsites.net/index.html??cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=100">
-    <img
-      src="https://awesome-github-stats.azurewebsites.net/user-stats/zishaan1911?cardType=level-alternate&theme=dark&fontFamily=&preferLogin=false&Points.Commits=100"
-      width="320"
-      alt="GitHub Statistics"
+  <img src="https://ghstats.dev/api/card?username=zishaan1911&theme=gruvbox&size=compact&order=grade%2Ccontributions%2Chours%2Cavg%2Cstars%2Cprs%2Cissues%2Cstreak%2Ccommits%2Cweek%2Ctrend%2Cactive_day%2Crepos%2Cfollowers" alt="GitHub Stats Card"
+    width="360"
     />
-  </a>
   <img
     src="https://github-readme-streak-stats.herokuapp.com?user=zishaan1911&theme=dark"
-    width="360"
+    width="320"
     alt="GitHub Streak"
   />
   <img
