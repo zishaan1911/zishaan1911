@@ -324,7 +324,6 @@ function render(s, t) {
       return `<g transform="translate(${x} ${y})" class="fade" style="animation-delay:${(i * 60)}ms">
         <text font-family="${mono}" font-size="11" fill="${t.muted}">${esc(label)}</text>
         <text y="27" font-family="${sans}" font-size="22" font-weight="600" fill="${t.strong}">${esc(value)}</text>
-        <text x="${[...String(value)].reduce((w, ch) => w + (/[,.]/.test(ch) ? 6 : 13.5), 0) + 8}" y="27" font-family="${mono}" font-size="10.5" fill="${t.muted}">${esc(sub)}</text>
       </g>`;
     })
     .join("");
