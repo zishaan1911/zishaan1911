@@ -1,68 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="370" viewBox="0 0 840 370" role="img" aria-label="zishaan1911 GitHub stats: 5797 contributions, 9 day streak, top 51%">
+<svg xmlns="http://www.w3.org/2000/svg" width="804" height="362" viewBox="0 0 804 362" role="img" aria-label="zishaan1911 GitHub stats: 5797 contributions, 9 day streak, top 0.3% of active developers">
   <defs>
-    <pattern id="g" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#1d2433" stroke-width="1"/></pattern>
-    <clipPath id="bar"><rect x="40" y="322" width="760" height="6" rx="3"/></clipPath>
+    <clipPath id="bar"><rect x="16" y="312" width="772" height="8" rx="2"/></clipPath>
     <style>
       .fade { opacity: 0; animation: fade .5s ease-out forwards; }
       .ring { animation: ring 1.2s ease-out both; }
-      @keyframes fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; } }
+      @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
       @keyframes ring { from { stroke-dasharray: 0 289.0; } }
       @media (prefers-reduced-motion: reduce) { .fade, .ring { animation: none; opacity: 1; } }
     </style>
   </defs>
-  <rect x=".5" y=".5" width="839" height="369" rx="14" fill="#0b0f17" stroke="#1f2735"/>
-  <rect x=".5" y=".5" width="839" height="369" rx="14" fill="url(#g)" opacity=".5"/>
-  <text x="40" y="44" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#7d8aa6">~/zishaan1911 $ <tspan fill="#f2f5fb">gh stats</tspan></text>
-  <text x="800" y="44" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#7d8aa6">updated 2026-11-23</text>
+  <rect x=".5" y=".5" width="803" height="361" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <text x="16" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#c9d1d9">GitHub stats</text>
+  <text x="788" y="30" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#c9d1d9" opacity="0.6">@zishaan1911 · updated 2026-11-23</text>
   
-    <g transform="translate(108 150)">
-      <circle r="46" fill="none" stroke="#1a2130" stroke-width="8"/>
-      <circle r="46" fill="none" stroke="#ffb347" stroke-width="8" stroke-linecap="round"
-        stroke-dasharray="142.3 289.0" transform="rotate(-90)" class="ring"/>
-      <text y="10" text-anchor="middle" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#f2f5fb">B</text>
-      <text y="78" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#ffd27a">top 51%</text>
-      <text y="96" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#7d8aa6">percentile</text>
+    <g transform="translate(100 168)">
+      <circle r="46" fill="none" stroke="#161b22" stroke-width="8"/>
+      <circle r="46" fill="none" stroke="#39d353" stroke-width="8" stroke-linecap="round"
+        stroke-dasharray="288.1 289.0" transform="rotate(-90)" class="ring"/>
+      <text y="10" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="30" font-weight="600" fill="#f0f6fc">S</text>
+      <text y="78" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#39d353">top 0.3%</text>
+      <text y="96" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e">of active devs</text>
     </g>
-  <g transform="translate(230 78)" class="fade" style="animation-delay:0ms">
-        <text font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#7d8aa6">contributions</text>
-        <text y="27" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#f2f5fb">5,797</text>
-        <text x="75" y="27" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#7d8aa6">all time</text>
-      </g><g transform="translate(430 78)" class="fade" style="animation-delay:60ms">
-        <text font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#7d8aa6">current streak</text>
-        <text y="27" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#f2f5fb">9d</text>
-        <text x="38" y="27" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#7d8aa6">keep going</text>
-      </g><g transform="translate(630 78)" class="fade" style="animation-delay:120ms">
-        <text font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#7d8aa6">longest streak</text>
-        <text y="27" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#f2f5fb">104d</text>
-        <text x="68" y="27" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#7d8aa6">best run</text>
-      </g><g transform="translate(230 140)" class="fade" style="animation-delay:180ms">
-        <text font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#7d8aa6">hours coded</text>
-        <text y="27" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#f2f5fb">438</text>
-        <text x="53" y="27" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#7d8aa6">est. from commits</text>
-      </g><g transform="translate(430 140)" class="fade" style="animation-delay:240ms">
-        <text font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#7d8aa6">commits</text>
-        <text y="27" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#f2f5fb">5,743</text>
-        <text x="75" y="27" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#7d8aa6">past year</text>
-      </g><g transform="translate(630 140)" class="fade" style="animation-delay:300ms">
-        <text font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#7d8aa6">stars earned</text>
-        <text y="27" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#f2f5fb">54</text>
-        <text x="38" y="27" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#7d8aa6">32 repos</text>
-      </g><g transform="translate(230 202)" class="fade" style="animation-delay:360ms">
-        <text font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#7d8aa6">pull requests</text>
-        <text y="27" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#f2f5fb">14</text>
-        <text x="38" y="27" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#7d8aa6">opened</text>
-      </g><g transform="translate(430 202)" class="fade" style="animation-delay:420ms">
-        <text font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#7d8aa6">issues</text>
-        <text y="27" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#f2f5fb">3</text>
-        <text x="23" y="27" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#7d8aa6">opened</text>
-      </g><g transform="translate(630 202)" class="fade" style="animation-delay:480ms">
-        <text font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#7d8aa6">followers</text>
-        <text y="27" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#f2f5fb">135</text>
-        <text x="53" y="27" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#7d8aa6">on GitHub</text>
+  <g transform="translate(210 70)" class="fade" style="animation-delay:0ms">
+        <text font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e">contributions</text>
+        <text y="27" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#f0f6fc">5,797</text>
+        <text x="68" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" fill="#8b949e">all time</text>
+      </g><g transform="translate(406 70)" class="fade" style="animation-delay:60ms">
+        <text font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e">current streak</text>
+        <text y="27" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#f0f6fc">9d</text>
+        <text x="35" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" fill="#8b949e">keep going</text>
+      </g><g transform="translate(602 70)" class="fade" style="animation-delay:120ms">
+        <text font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e">longest streak</text>
+        <text y="27" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#f0f6fc">104d</text>
+        <text x="62" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" fill="#8b949e">best run</text>
+      </g><g transform="translate(210 132)" class="fade" style="animation-delay:180ms">
+        <text font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e">hours coded</text>
+        <text y="27" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#f0f6fc">1,199</text>
+        <text x="68" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" fill="#8b949e">est. from commits</text>
+      </g><g transform="translate(406 132)" class="fade" style="animation-delay:240ms">
+        <text font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e">commits</text>
+        <text y="27" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#f0f6fc">5,719</text>
+        <text x="68" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" fill="#8b949e">past year</text>
+      </g><g transform="translate(602 132)" class="fade" style="animation-delay:300ms">
+        <text font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e">stars earned</text>
+        <text y="27" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#f0f6fc">63</text>
+        <text x="35" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" fill="#8b949e">41 repos</text>
+      </g><g transform="translate(210 194)" class="fade" style="animation-delay:360ms">
+        <text font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e">rank in malaysia</text>
+        <text y="27" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#f0f6fc">#31</text>
+        <text x="48.5" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" fill="#8b949e">committers.top</text>
+      </g><g transform="translate(406 194)" class="fade" style="animation-delay:420ms">
+        <text font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e">leetcode rank</text>
+        <text y="27" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#f0f6fc">#525,804</text>
+        <text x="108.5" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" fill="#8b949e">global</text>
+      </g><g transform="translate(602 194)" class="fade" style="animation-delay:480ms">
+        <text font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e">leetcode solved</text>
+        <text y="27" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#f0f6fc">300</text>
+        <text x="48.5" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" fill="#8b949e">81e 168m 51h</text>
+      </g><g transform="translate(210 256)" class="fade" style="animation-delay:540ms">
+        <text font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e">pull requests</text>
+        <text y="27" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#f0f6fc">25</text>
+        <text x="35" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" fill="#8b949e">opened</text>
+      </g><g transform="translate(406 256)" class="fade" style="animation-delay:600ms">
+        <text font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e">issues</text>
+        <text y="27" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#f0f6fc">3</text>
+        <text x="21.5" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" fill="#8b949e">opened</text>
+      </g><g transform="translate(602 256)" class="fade" style="animation-delay:660ms">
+        <text font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e">followers</text>
+        <text y="27" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#f0f6fc">135</text>
+        <text x="48.5" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" fill="#8b949e">on GitHub</text>
       </g>
-  <text x="40" y="274" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#7d8aa6">last 52 weeks</text>
-  <text x="800" y="274" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#7d8aa6">5,796 contributions</text>
-  <rect x="40.0" y="284" width="11.7" height="22" rx="2.5" fill="#151b27"/><rect x="54.7" y="284" width="11.7" height="22" rx="2.5" fill="#151b27"/><rect x="69.3" y="284" width="11.7" height="22" rx="2.5" fill="#151b27"/><rect x="84.0" y="284" width="11.7" height="22" rx="2.5" fill="#151b27"/><rect x="98.7" y="284" width="11.7" height="22" rx="2.5" fill="#151b27"/><rect x="113.4" y="284" width="11.7" height="22" rx="2.5" fill="#151b27"/><rect x="128.0" y="284" width="11.7" height="22" rx="2.5" fill="#151b27"/><rect x="142.7" y="284" width="11.7" height="22" rx="2.5" fill="#151b27"/><rect x="157.4" y="284" width="11.7" height="22" rx="2.5" fill="#151b27"/><rect x="172.1" y="284" width="11.7" height="22" rx="2.5" fill="#151b27"/><rect x="186.7" y="284" width="11.7" height="22" rx="2.5" fill="#151b27"/><rect x="201.4" y="284" width="11.7" height="22" rx="2.5" fill="#151b27"/><rect x="216.1" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="230.8" y="284" width="11.7" height="22" rx="2.5" fill="#151b27"/><rect x="245.4" y="284" width="11.7" height="22" rx="2.5" fill="#151b27"/><rect x="260.1" y="284" width="11.7" height="22" rx="2.5" fill="#151b27"/><rect x="274.8" y="284" width="11.7" height="22" rx="2.5" fill="#151b27"/><rect x="289.4" y="284" width="11.7" height="22" rx="2.5" fill="#151b27"/><rect x="304.1" y="284" width="11.7" height="22" rx="2.5" fill="#151b27"/><rect x="318.8" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="333.5" y="284" width="11.7" height="22" rx="2.5" fill="#151b27"/><rect x="348.1" y="284" width="11.7" height="22" rx="2.5" fill="#151b27"/><rect x="362.8" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="377.5" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="392.2" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="406.8" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="421.5" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="436.2" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="450.8" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="465.5" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="480.2" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="494.9" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="509.5" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="524.2" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="538.9" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="553.6" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="568.2" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="582.9" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="597.6" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="612.3" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="626.9" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="641.6" y="284" width="11.7" height="22" rx="2.5" fill="#8a4d14"/><rect x="656.3" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="670.9" y="284" width="11.7" height="22" rx="2.5" fill="#ffb347"/><rect x="685.6" y="284" width="11.7" height="22" rx="2.5" fill="#ffb347"/><rect x="700.3" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="715.0" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="729.6" y="284" width="11.7" height="22" rx="2.5" fill="#8a4d14"/><rect x="744.3" y="284" width="11.7" height="22" rx="2.5" fill="#4a2e12"/><rect x="759.0" y="284" width="11.7" height="22" rx="2.5" fill="#ffb347"/><rect x="773.7" y="284" width="11.7" height="22" rx="2.5" fill="#d9781c"/><rect x="788.3" y="284" width="11.7" height="22" rx="2.5" fill="#8a4d14"/>
-  <g clip-path="url(#bar)"><rect x="40.0" y="322" width="193.3" height="6" fill="#DA5B0B"/><rect x="233.3" y="322" width="191.9" height="6" fill="#3572A5"/><rect x="425.2" y="322" width="154.2" height="6" fill="#3178c6"/><rect x="579.5" y="322" width="128.6" height="6" fill="#f34b7d"/><rect x="708.1" y="322" width="57.3" height="6" fill="#e34c26"/><rect x="765.4" y="322" width="34.6" height="6" fill="#f1e05a"/></g>
-  <circle cx="44" cy="343" r="4" fill="#DA5B0B"/><text x="53" y="347" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#7d8aa6">Jupyter Notebook 25%</text><circle cx="210" cy="343" r="4" fill="#3572A5"/><text x="219" y="347" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#7d8aa6">Python 25%</text><circle cx="308" cy="343" r="4" fill="#3178c6"/><text x="317" y="347" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#7d8aa6">TypeScript 20%</text><circle cx="433.2" cy="343" r="4" fill="#f34b7d"/><text x="442.2" y="347" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#7d8aa6">C++ 17%</text><circle cx="510.79999999999995" cy="343" r="4" fill="#e34c26"/><text x="519.8" y="347" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#7d8aa6">HTML 8%</text><circle cx="588.4" cy="343" r="4" fill="#f1e05a"/><text x="597.4" y="347" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#7d8aa6">JavaScript 5%</text>
+  <g clip-path="url(#bar)"><rect x="16.0" y="312" width="387.7" height="8" fill="#3178c6"/><rect x="403.7" y="312" width="192.2" height="8" fill="#f34b7d"/><rect x="595.8" y="312" width="117.2" height="8" fill="#3572A5"/><rect x="713.0" y="312" width="28.1" height="8" fill="#f1e05a"/><rect x="741.1" y="312" width="27.8" height="8" fill="#8b949e"/><rect x="768.9" y="312" width="19.1" height="8" fill="#89e051"/></g>
+  <circle cx="20" cy="333" r="4" fill="#3178c6"/><text x="29" y="337" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e">TypeScript 50%</text><circle cx="136.2" cy="333" r="4" fill="#f34b7d"/><text x="145.2" y="337" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e">C++ 25%</text><circle cx="208.29999999999998" cy="333" r="4" fill="#3572A5"/><text x="217.29999999999998" y="337" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e">Python 15%</text><circle cx="299.29999999999995" cy="333" r="4" fill="#f1e05a"/><text x="308.29999999999995" y="337" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e">JavaScript 4%</text><circle cx="409.19999999999993" cy="333" r="4" fill="#8b949e"/><text x="418.19999999999993" y="337" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e">SQL 4%</text><circle cx="474.99999999999994" cy="333" r="4" fill="#89e051"/><text x="483.99999999999994" y="337" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e">Shell 2%</text>
 </svg>
