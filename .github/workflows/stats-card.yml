@@ -1,0 +1,39 @@
+name: Update stats card
+
+on:
+  schedule:
+    - cron: "17 */6 * * *" # every 6 hours
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/scripts/stats-card.mjs", ".github/workflows/stats-card.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stats-card
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Generate cards
+        env:
+          # Add a STATS_TOKEN secret (PAT with read:user + repo) to include private contributions.
+          GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+          # Optional: add WAKATIME_API_KEY to use real tracked hours instead of the commit estimate.
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+        run: node .github/scripts/stats-card.mjs
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stats-dark.svg assets/stats-light.svg
+          git diff --cached --quiet || (git commit -m "Update stats card" && git push)

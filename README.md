@@ -15,14 +15,10 @@
 
 <div align="center">
 
-  <img src="https://ghstats.dev/api/card?username=zishaan1911&theme=gruvbox&size=compact&order=grade%2Ccontributions%2Chours%2Cavg%2Cstars%2Cprs%2Cissues%2Cstreak%2Ccommits%2Cweek%2Ctrend%2Cactive_day%2Crepos%2Cfollowers" alt="GitHub Stats Card"
-    width="360"
-    />
-  <img
-    src="https://github-readme-streak-stats.herokuapp.com?user=zishaan1911&theme=dark"
-    width="320"
-    alt="GitHub Streak"
-  />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
+    <img src="assets/stats-light.svg" alt="GitHub stats: contributions, streaks, hours coded and percentile rank" width="840">
+  </picture>
   <img
     src="https://gitblend.com/api/contributions/github?username=zishaan1911&theme=dark"
     width="680"
