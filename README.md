@@ -19,11 +19,6 @@
     <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
     <img src="assets/stats-light.svg" alt="GitHub stats: contributions, streaks, hours coded, percentile, Malaysia and LeetCode rank" width="804">
   </picture>
-  <img
-    src="https://gitblend.com/api/contributions/github?username=zishaan1911&theme=dark"
-    width="804"
-    alt="GitHub Contributions"
-  />
 
 </div>
 

@@ -134,7 +134,7 @@ async function authoredCommits(userId, repoNames) {
               defaultBranchRef { target { ... on Commit {
                 history(first: 100, after: $after, author: { id: $author }) {
                   pageInfo { hasNextPage endCursor }
-                  nodes { oid authoredDate }
+                  nodes { oid authoredDate additions }
                 }
               } } }
             }
@@ -146,7 +146,7 @@ async function authoredCommits(userId, repoNames) {
       }
       const h = d.repository?.defaultBranchRef?.target?.history;
       if (!h) break;
-      commits.push(...h.nodes.map((n) => ({ repo: full, oid: n.oid, t: Date.parse(n.authoredDate) })));
+      commits.push(...h.nodes.map((n) => ({ repo: full, oid: n.oid, t: Date.parse(n.authoredDate), add: n.additions })));
       after = h.pageInfo.hasNextPage ? h.pageInfo.endCursor : null;
     } while (after);
   }
@@ -214,6 +214,19 @@ function estimateHours(times) {
   return ms / 3600e3;
 }
 
+// Longest single coding session under the same rules as estimateHours: commits less than
+// 2h apart form one session, plus 2h of lead-in before its first commit.
+function longestSession(times) {
+  let best = 0, start = times[0];
+  for (let i = 1; i <= times.length; i++) {
+    if (i === times.length || times[i] - times[i - 1] >= 2 * 3600e3) {
+      best = Math.max(best, (times[i - 1] - start) / 3600e3 + 2);
+      start = times[i];
+    }
+  }
+  return best;
+}
+
 async function wakatimeHours() {
   const res = await fetch("https://wakatime.com/api/v1/users/current/all_time_since_today", {
     headers: { Authorization: `Basic ${Buffer.from(WAKA).toString("base64")}` },
@@ -278,33 +291,37 @@ async function leetcode() {
 // ---------- render ----------
 
 const THEMES = {
-  dark: { bg: "#141414", rule: "#2e2e2e", label: "#8a8a8a", text: "#f4f4f4", muted: "#8a8a8a", red: "#e8372c", onRed: "#ffffff" },
-  light: { bg: "#f4f1ea", rule: "#d9d4c8", label: "#77736b", text: "#141414", muted: "#8f8a80", red: "#e8372c", onRed: "#ffffff" },
+  dark: { bg: "#141414", cell: "#232323", rule: "#2e2e2e", label: "#8a8a8a", text: "#f4f4f4", muted: "#8a8a8a", red: "#e8372c", onRed: "#ffffff" },
+  light: { bg: "#f4f1ea", cell: "#e4dfd3", rule: "#d9d4c8", label: "#77736b", text: "#141414", muted: "#8f8a80", red: "#e8372c", onRed: "#ffffff" },
 };
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 const fmt = (n) => (n >= 10000 ? `${(n / 1000).toFixed(1).replace(/\.0$/, "")}k` : Math.round(n).toLocaleString("en-US"));
+const big = (n) => (n >= 1e6 ? `${(n / 1e6).toFixed(1).replace(/\.0$/, "")}M` : fmt(n));
 const rankFmt = (n) => (n >= 10000 ? `#${Math.round(n / 1000)}k` : `#${n.toLocaleString("en-US")}`);
 
 // Swiss layout: red rank panel on the left, a strict 3x3 grid of stats on the right,
 // languages as a single typographic line along the bottom.
 function render(s, t) {
-  const W = 804, H = 352, P = 230; // P = width of the red panel
+  const W = 804, H = 472, P = 230; // P = width of the red panel
   const font = "'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif";
   const pct = s.rank.percentile < 10 ? s.rank.percentile.toFixed(1) : Math.round(s.rank.percentile);
 
   const cells = [
     ["CONTRIBUTIONS", fmt(s.totalContributions)],
     ["HOURS CODED", fmt(s.hours)],
+    ["LINES WRITTEN", big(s.lines)],
+    ["BEST DAY", fmt(s.bestDay)],
     ["STREAK", `${s.streak.current}d`],
-    ["LONGEST", `${s.streak.longest}d`],
-    ["STARS", fmt(s.stars)],
+    ["LONGEST STREAK", `${s.streak.longest}d`],
     ["PULL REQ.", fmt(s.prs)],
+    ["STARS", fmt(s.stars)],
     [`${COUNTRY.toUpperCase()}`, s.countryRank ? `#${s.countryRank}` : "—"],
     ["LEETCODE", s.leetcode ? rankFmt(s.leetcode.ranking) : "—"],
     ["SOLVED", s.leetcode ? fmt(s.leetcode.solved) : "—"],
+    ["LONGEST SESSION", `${Math.round(s.longestSession)}h`],
   ];
-  const COLS = 3, cw = (W - P) / COLS, ch = 96;
+  const COLS = 4, cw = (W - P) / COLS, ch = 96;
   const grid = cells
     .map(([label, value], i) => {
       const x = P + (i % COLS) * cw, y = Math.floor(i / COLS) * ch;
@@ -314,8 +331,36 @@ function render(s, t) {
     </g>`;
     })
     .join("\n    ");
-  const rules = [1, 2].map((k) => `<line x1="${(P + k * cw).toFixed(1)}" y1="0" x2="${(P + k * cw).toFixed(1)}" y2="${3 * ch}"/>`).join("")
+  const rules = [1, 2, 3].map((k) => `<line x1="${(P + k * cw).toFixed(1)}" y1="0" x2="${(P + k * cw).toFixed(1)}" y2="${3 * ch}"/>`).join("")
     + [1, 2, 3].map((k) => `<line x1="${P}" y1="${k * ch}" x2="${W}" y2="${k * ch}"/>`).join("");
+
+  // heatmap: past 53 weeks, Sunday-first columns like GitHub, red ramp by quartile
+  const today = s.days[s.days.length - 1][0];
+  const dow = new Date(today + "T00:00:00Z").getUTCDay();
+  const span = s.days.slice(-(52 * 7 + dow + 1));
+  const nz = span.map(([, c]) => c).filter((c) => c > 0).sort((a, b) => a - b);
+  const q = (f) => nz[Math.floor(f * (nz.length - 1))] || 1;
+  const cuts = [q(0.25), q(0.5), q(0.75)];
+  const level = (c) => (c === 0 ? 0 : c <= cuts[0] ? 1 : c <= cuts[1] ? 2 : c <= cuts[2] ? 3 : 4);
+  const hx = P + 18, hy = 334, pitch = (W - P - 36 + 2) / 53, cs = pitch - 2;
+  const months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+  let monthLabels = "", lastMonth = -1, lastCol = -9;
+  const cellsSvg = span
+    .map(([date, c], i) => {
+      const col = Math.floor(i / 7), row = i % 7, l = level(c);
+      const m = +date.slice(5, 7) - 1;
+      if (row === 0 && m !== lastMonth) {
+        lastMonth = m;
+        if (col - lastCol < 4 || col > 50) return cell(l, col, row);
+        lastCol = col;
+        monthLabels += `<text x="${(hx + col * pitch).toFixed(1)}" y="${hy - 8}">${months[m]}</text>`;
+      }
+      return cell(l, col, row);
+    })
+    .join("");
+  function cell(l, col, row) {
+      return `<rect x="${(hx + col * pitch).toFixed(1)}" y="${(hy + row * pitch).toFixed(1)}" width="${cs.toFixed(1)}" height="${cs.toFixed(1)}" rx="1" fill="${l ? t.red : t.cell}"${l ? ` fill-opacity="${[0, 0.3, 0.55, 0.8, 1][l]}"` : ""}/>`;
+  }
 
   // languages: top three in full ink, the rest muted
   const total = s.langs.reduce((a, l) => a + l.size, 0) || 1;
@@ -323,7 +368,7 @@ function render(s, t) {
   const langs = s.langs
     .map((l, i) => {
       const label = `${l.name} ${Math.round((l.size / total) * 100)}`;
-      const out = `<text x="${lx.toFixed(1)}" y="326" fill="${i < 3 ? t.text : t.muted}">${esc(label)}</text>`;
+      const out = `<text x="${lx.toFixed(1)}" y="${H - 22}" fill="${i < 3 ? t.text : t.muted}">${esc(label)}</text>`;
       lx += label.length * 6.6 + 22;
       return out;
     })
@@ -340,13 +385,16 @@ function render(s, t) {
     <rect width="${P}" height="${H}" rx="4" fill="${t.red}"/>
     <rect x="${P - 30}" width="30" height="${H}" fill="${t.red}"/>
     <text x="28" y="44" font-size="11" font-weight="700" letter-spacing="1.5" fill="${t.onRed}" opacity=".85">GITHUB / ${s.year}</text>
-    <text x="22" y="214" font-size="168" font-weight="800" letter-spacing="-8" fill="${t.onRed}">${esc(s.rank.level)}</text>
-    <text x="28" y="270" font-size="30" font-weight="800" letter-spacing="-1" fill="${t.onRed}">Top ${pct}%</text>
-    <text x="28" y="292" font-size="11" font-weight="600" fill="${t.onRed}" opacity=".8">of active developers</text>
-    <text x="28" y="328" font-size="11" font-weight="700" fill="${t.onRed}">@${esc(USER)}</text>
+    <text x="22" y="244" font-size="168" font-weight="800" letter-spacing="-8" fill="${t.onRed}">${esc(s.rank.level)}</text>
+    <text x="28" y="300" font-size="30" font-weight="800" letter-spacing="-1" fill="${t.onRed}">Top ${pct}%</text>
+    <text x="28" y="322" font-size="11" font-weight="600" fill="${t.onRed}" opacity=".8">of active developers</text>
+    <text x="28" y="${H - 22}" font-size="11" font-weight="700" fill="${t.onRed}">@${esc(USER)}</text>
     <g stroke="${t.rule}">${rules}</g>
     ${grid}
-    <g font-size="11" font-weight="700">${langs}<text x="${W - 18}" y="326" text-anchor="end" fill="${t.red}">%</text></g>
+    <g font-size="9.5" font-weight="700" letter-spacing="1.3" fill="${t.label}">${monthLabels}</g>
+    <g>${cellsSvg}</g>
+    <line x1="${P}" y1="${H - 52}" x2="${W}" y2="${H - 52}" stroke="${t.rule}"/>
+    <g font-size="11" font-weight="700">${langs}<text x="${W - 18}" y="${H - 22}" text-anchor="end" fill="${t.red}">%</text></g>
   </g>
 </svg>
 `;
@@ -400,6 +448,10 @@ const stats = {
 const pastYear = cal.days.slice(-365).reduce((a, [, c]) => a + c, 0);
 stats.rank = rank(pastYear);
 [stats.countryRank, stats.leetcode] = await Promise.all([countryRank(), leetcode()]);
+stats.longestSession = longestSession(commits.map((c) => c.t));
+// Lines written: additions on the default branch, same repos as the language count.
+stats.lines = commits.filter((c) => !langExclude.has(c.repo.split("/")[1].toLowerCase())).reduce((a, c) => a + (c.add || 0), 0);
+stats.bestDay = cal.days.reduce((m, [, c]) => Math.max(m, c), 0);
 
 await mkdir(OUT, { recursive: true });
 await writeFile(`${OUT}/stats-dark.svg`, render(stats, THEMES.dark));

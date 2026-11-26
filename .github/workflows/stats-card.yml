@@ -30,8 +30,6 @@ jobs:
           GH_USER: ${{ github.repository_owner }}
           LEETCODE_USER: iamzishaan
           COMMITTERS_COUNTRY: malaysia
-          # Client repos left out of the top-languages count (still counted everywhere else).
-          LANG_EXCLUDE_REPOS: apptimber-tms-php84,apptimberptm,ptm,ptmpatch
           # Optional: add WAKATIME_API_KEY to use real tracked hours instead of the commit estimate.
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
         run: |
