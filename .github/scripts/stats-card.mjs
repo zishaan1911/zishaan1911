@@ -286,7 +286,7 @@ const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&
 const fmt = (n) => (n >= 10000 ? `${(n / 1000).toFixed(1).replace(/\.0$/, "")}k` : Math.round(n).toLocaleString("en-US"));
 const rankFmt = (n) => (n >= 10000 ? `#${Math.round(n / 1000)}k` : `#${n.toLocaleString("en-US")}`);
 
-// Swiss layout: red rank panel on the left, a strict 4x3 grid of stats on the right,
+// Swiss layout: red rank panel on the left, a strict 3x3 grid of stats on the right,
 // languages as a single typographic line along the bottom.
 function render(s, t) {
   const W = 804, H = 352, P = 230; // P = width of the red panel
@@ -298,26 +298,23 @@ function render(s, t) {
     ["HOURS CODED", fmt(s.hours)],
     ["STREAK", `${s.streak.current}d`],
     ["LONGEST", `${s.streak.longest}d`],
-    ["COMMITS", fmt(s.commitsYear)],
     ["STARS", fmt(s.stars)],
     ["PULL REQ.", fmt(s.prs)],
-    ["FOLLOWERS", fmt(s.followers)],
     [`${COUNTRY.toUpperCase()}`, s.countryRank ? `#${s.countryRank}` : "—"],
     ["LEETCODE", s.leetcode ? rankFmt(s.leetcode.ranking) : "—"],
     ["SOLVED", s.leetcode ? fmt(s.leetcode.solved) : "—"],
-    ["ISSUES", fmt(s.issues)],
   ];
-  const cw = (W - P) / 4, ch = 96;
+  const COLS = 3, cw = (W - P) / COLS, ch = 96;
   const grid = cells
     .map(([label, value], i) => {
-      const x = P + (i % 4) * cw, y = Math.floor(i / 4) * ch;
+      const x = P + (i % COLS) * cw, y = Math.floor(i / COLS) * ch;
       return `<g class="fade" style="animation-delay:${i * 45}ms">
       <text x="${(x + 18).toFixed(1)}" y="${y + 30}" font-size="9.5" font-weight="700" letter-spacing="1.3" fill="${t.label}">${esc(label)}</text>
       <text x="${(x + 16).toFixed(1)}" y="${y + 76}" font-size="34" font-weight="800" letter-spacing="-1.2" fill="${t.text}">${esc(value)}</text>
     </g>`;
     })
     .join("\n    ");
-  const rules = [1, 2, 3].map((k) => `<line x1="${(P + k * cw).toFixed(1)}" y1="0" x2="${(P + k * cw).toFixed(1)}" y2="${3 * ch}"/>`).join("")
+  const rules = [1, 2].map((k) => `<line x1="${(P + k * cw).toFixed(1)}" y1="0" x2="${(P + k * cw).toFixed(1)}" y2="${3 * ch}"/>`).join("")
     + [1, 2, 3].map((k) => `<line x1="${P}" y1="${k * ch}" x2="${W}" y2="${k * ch}"/>`).join("");
 
   // languages: top three in full ink, the rest muted
