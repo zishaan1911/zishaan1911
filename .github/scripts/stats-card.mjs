@@ -278,96 +278,79 @@ async function leetcode() {
 // ---------- render ----------
 
 const THEMES = {
-  dark: { bg: "#0d1117", border: "#30363d", text: "#c9d1d9", strong: "#f0f6fc", muted: "#8b949e", accent: "#39d353", accent2: "#26a641", track: "#161b22" },
-  light: { bg: "#ffffff", border: "#d0d7de", text: "#1f2328", strong: "#1f2328", muted: "#656d76", accent: "#2da44e", accent2: "#1a7f37", track: "#ebedf0" },
+  dark: { bg: "#141414", rule: "#2e2e2e", label: "#8a8a8a", text: "#f4f4f4", muted: "#8a8a8a", red: "#e8372c", onRed: "#ffffff" },
+  light: { bg: "#f4f1ea", rule: "#d9d4c8", label: "#77736b", text: "#141414", muted: "#8f8a80", red: "#e8372c", onRed: "#ffffff" },
 };
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 const fmt = (n) => (n >= 10000 ? `${(n / 1000).toFixed(1).replace(/\.0$/, "")}k` : Math.round(n).toLocaleString("en-US"));
+const rankFmt = (n) => (n >= 10000 ? `#${Math.round(n / 1000)}k` : `#${n.toLocaleString("en-US")}`);
 
+// Swiss layout: red rank panel on the left, a strict 4x3 grid of stats on the right,
+// languages as a single typographic line along the bottom.
 function render(s, t) {
-  const W = 804, H = 352;
-  const mono = "system-ui, -apple-system, sans-serif";
-  const sans = "system-ui, -apple-system, sans-serif";
+  const W = 804, H = 352, P = 230; // P = width of the red panel
+  const font = "'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif";
+  const pct = s.rank.percentile < 10 ? s.rank.percentile.toFixed(1) : Math.round(s.rank.percentile);
 
-  // rank ring
-  const R = 46, C = 2 * Math.PI * R;
-  const filled = Math.max(0.02, Math.min(1, 1 - s.rank.percentile / 100));
-  const ring = `
-    <g transform="translate(100 168)">
-      <circle r="${R}" fill="none" stroke="${t.track}" stroke-width="8"/>
-      <circle r="${R}" fill="none" stroke="${t.accent}" stroke-width="8" stroke-linecap="round"
-        stroke-dasharray="${(C * filled).toFixed(1)} ${C.toFixed(1)}" transform="rotate(-90)" class="ring"/>
-      <text y="10" text-anchor="middle" font-family="${sans}" font-size="30" font-weight="600" fill="${t.strong}">${s.rank.level}</text>
-      <text y="${R + 32}" text-anchor="middle" font-family="${mono}" font-size="13" font-weight="600" fill="${t.accent}">top ${s.rank.percentile < 10 ? s.rank.percentile.toFixed(1) : Math.round(s.rank.percentile)}%</text>
-      <text y="${R + 50}" text-anchor="middle" font-family="${mono}" font-size="11" fill="${t.muted}">of active devs</text>
-    </g>`;
-
-  // stat grid: 3 columns x 3 rows
-  const items = [
-    ["contributions", fmt(s.totalContributions), "all time"],
-    ["current streak", `${s.streak.current}d`, s.streak.current ? "keep going" : "start today"],
-    ["longest streak", `${s.streak.longest}d`, "best run"],
-    ["hours coded", fmt(s.hours), s.hoursSource],
-    ["commits", fmt(s.commitsYear), "past year"],
-    ["stars earned", fmt(s.stars), `${s.repos} repos`],
-    [`rank in ${COUNTRY}`, s.countryRank ? `#${s.countryRank}` : "n/a", "committers.top"],
-    ["leetcode rank", s.leetcode ? `#${s.leetcode.ranking.toLocaleString("en-US")}` : "n/a", "global"],
-    ["leetcode solved", s.leetcode ? fmt(s.leetcode.solved) : "n/a", s.leetcode ? `${s.leetcode.easy}e ${s.leetcode.medium}m ${s.leetcode.hard}h` : ""],
-    ["pull requests", fmt(s.prs), "opened"],
-    ["issues", fmt(s.issues), "opened"],
-    ["followers", fmt(s.followers), "on GitHub"],
+  const cells = [
+    ["CONTRIBUTIONS", fmt(s.totalContributions)],
+    ["HOURS CODED", fmt(s.hours)],
+    ["STREAK", `${s.streak.current}d`],
+    ["LONGEST", `${s.streak.longest}d`],
+    ["COMMITS", fmt(s.commitsYear)],
+    ["STARS", fmt(s.stars)],
+    ["PULL REQ.", fmt(s.prs)],
+    ["FOLLOWERS", fmt(s.followers)],
+    [`${COUNTRY.toUpperCase()}`, s.countryRank ? `#${s.countryRank}` : "—"],
+    ["LEETCODE", s.leetcode ? rankFmt(s.leetcode.ranking) : "—"],
+    ["SOLVED", s.leetcode ? fmt(s.leetcode.solved) : "—"],
+    ["ISSUES", fmt(s.issues)],
   ];
-  const grid = items
-    .map(([label, value, sub], i) => {
-      const x = 210 + (i % 3) * 196, y = 70 + Math.floor(i / 3) * 62;
-      return `<g transform="translate(${x} ${y})" class="fade" style="animation-delay:${(i * 60)}ms">
-        <text font-family="${mono}" font-size="11" fill="${t.muted}">${esc(label)}</text>
-        <text y="27" font-family="${sans}" font-size="22" font-weight="600" fill="${t.strong}">${esc(value)}</text>
-      </g>`;
+  const cw = (W - P) / 4, ch = 96;
+  const grid = cells
+    .map(([label, value], i) => {
+      const x = P + (i % 4) * cw, y = Math.floor(i / 4) * ch;
+      return `<g class="fade" style="animation-delay:${i * 45}ms">
+      <text x="${(x + 18).toFixed(1)}" y="${y + 30}" font-size="9.5" font-weight="700" letter-spacing="1.3" fill="${t.label}">${esc(label)}</text>
+      <text x="${(x + 16).toFixed(1)}" y="${y + 76}" font-size="34" font-weight="800" letter-spacing="-1.2" fill="${t.text}">${esc(value)}</text>
+    </g>`;
+    })
+    .join("\n    ");
+  const rules = [1, 2, 3].map((k) => `<line x1="${(P + k * cw).toFixed(1)}" y1="0" x2="${(P + k * cw).toFixed(1)}" y2="${3 * ch}"/>`).join("")
+    + [1, 2, 3].map((k) => `<line x1="${P}" y1="${k * ch}" x2="${W}" y2="${k * ch}"/>`).join("");
+
+  // languages: top three in full ink, the rest muted
+  const total = s.langs.reduce((a, l) => a + l.size, 0) || 1;
+  let lx = P + 18;
+  const langs = s.langs
+    .map((l, i) => {
+      const label = `${l.name} ${Math.round((l.size / total) * 100)}`;
+      const out = `<text x="${lx.toFixed(1)}" y="326" fill="${i < 3 ? t.text : t.muted}">${esc(label)}</text>`;
+      lx += label.length * 6.6 + 22;
+      return out;
     })
     .join("");
 
-  // top languages bar
-  const langTotal = s.langs.reduce((a, l) => a + l.size, 0) || 1;
-  let lx = 16;
-  const bar = s.langs
-    .map((l) => {
-      const w = Math.max(2, (l.size / langTotal) * 772);
-      const r = `<rect x="${lx.toFixed(1)}" y="312" width="${w.toFixed(1)}" height="8" fill="${l.color || t.muted}"/>`;
-      lx += w;
-      return r;
-    })
-    .join("");
-  let tx = 16;
-  const legend = s.langs
-    .map((l) => {
-      const label = `${l.name} ${((l.size / langTotal) * 100).toFixed(0)}%`;
-      const g = `<circle cx="${tx + 4}" cy="333" r="4" fill="${l.color || t.muted}"/><text x="${tx + 13}" y="337" font-family="${mono}" font-size="11" fill="${t.muted}">${esc(label)}</text>`;
-      tx += label.length * 6.3 + 28;
-      return g;
-    })
-    .join("");
-
-  const updated = new Date().toISOString().slice(0, 10);
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H + 10}" viewBox="0 0 ${W} ${H + 10}" role="img" aria-label="${esc(USER)} GitHub stats: ${s.totalContributions} contributions, ${s.streak.current} day streak, top ${s.rank.percentile.toFixed(1)}% of active developers">
-  <defs>
-    <clipPath id="bar"><rect x="16" y="312" width="772" height="8" rx="2"/></clipPath>
-    <style>
-      .fade { opacity: 0; animation: fade .5s ease-out forwards; }
-      .ring { animation: ring 1.2s ease-out both; }
-      @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
-      @keyframes ring { from { stroke-dasharray: 0 ${C.toFixed(1)}; } }
-      @media (prefers-reduced-motion: reduce) { .fade, .ring { animation: none; opacity: 1; } }
-    </style>
-  </defs>
-  <rect x=".5" y=".5" width="${W - 1}" height="${H + 9}" rx="6" fill="${t.bg}" stroke="${t.border}"/>
-  <text x="16" y="30" font-family="${sans}" font-size="14" font-weight="600" fill="${t.text}">GitHub stats</text>
-  <text x="${W - 16}" y="30" text-anchor="end" font-family="${sans}" font-size="10" fill="${t.text}" opacity="0.6">@${esc(USER)} · updated ${updated}</text>
-  ${ring}
-  ${grid}
-  <g clip-path="url(#bar)">${bar}</g>
-  ${legend}
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(USER)} GitHub stats: top ${pct}% of active developers, ${s.totalContributions} contributions, ${s.streak.current} day streak">
+  <style>
+    .fade { opacity: 0; animation: fade .5s ease-out forwards; }
+    @keyframes fade { to { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .fade { animation: none; opacity: 1; } }
+  </style>
+  <g font-family="${font}">
+    <rect width="${W}" height="${H}" rx="4" fill="${t.bg}"/>
+    <rect width="${P}" height="${H}" rx="4" fill="${t.red}"/>
+    <rect x="${P - 30}" width="30" height="${H}" fill="${t.red}"/>
+    <text x="28" y="44" font-size="11" font-weight="700" letter-spacing="1.5" fill="${t.onRed}" opacity=".85">GITHUB / ${s.year}</text>
+    <text x="22" y="214" font-size="168" font-weight="800" letter-spacing="-8" fill="${t.onRed}">${esc(s.rank.level)}</text>
+    <text x="28" y="270" font-size="30" font-weight="800" letter-spacing="-1" fill="${t.onRed}">Top ${pct}%</text>
+    <text x="28" y="292" font-size="11" font-weight="600" fill="${t.onRed}" opacity=".8">of active developers</text>
+    <text x="28" y="328" font-size="11" font-weight="700" fill="${t.onRed}">@${esc(USER)}</text>
+    <g stroke="${t.rule}">${rules}</g>
+    ${grid}
+    <g font-size="11" font-weight="700">${langs}<text x="${W - 18}" y="326" text-anchor="end" fill="${t.red}">%</text></g>
+  </g>
 </svg>
 `;
 }
